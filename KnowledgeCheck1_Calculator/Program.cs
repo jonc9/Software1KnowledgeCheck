@@ -15,11 +15,15 @@ namespace KnowledgeCheck1_Calculator
 
             var input = Console.ReadLine();
             var calculator = new Calculator();
+            NewMethod(input, calculator);
+        }
 
+        private static void NewMethod(string input, Calculator calculator)
+        {
             switch (input)
             {
                 case "1":
-                    Console.WriteLine("Enter 2 integers to add");
+                    Console.WriteLine("Enter 2 integers to add:");
                     var addNumber1 = Console.ReadLine();
                     var addNumber2 = Console.ReadLine();
 
@@ -30,12 +34,12 @@ namespace KnowledgeCheck1_Calculator
                     }
                     else
                     {
-                        Console.WriteLine("One or more of the numbers is not an int");
+                        Console.WriteLine("One or more of the numbers is not an integer.");
                     }
                     break;
 
                 case "2":
-                    Console.WriteLine("Enter 2 integers to subtract");
+                    Console.WriteLine("Enter 2 integers to subtract:");
                     var subtractNumber1 = Console.ReadLine();
                     var subtractNumber2 = Console.ReadLine();
 
@@ -46,12 +50,12 @@ namespace KnowledgeCheck1_Calculator
                     }
                     else
                     {
-                        Console.WriteLine("One or more of the numbers is not an int");
+                        Console.WriteLine("One or more of the numbers is not an integer.");
                     }
                     break;
 
                 case "3":
-                    Console.WriteLine("Enter 2 integers to multiply");
+                    Console.WriteLine("Enter 2 integers to multiply:");
                     var multiplyNumber1 = Console.ReadLine();
                     var multiplyNumber2 = Console.ReadLine();
 
@@ -62,12 +66,12 @@ namespace KnowledgeCheck1_Calculator
                     }
                     else
                     {
-                        Console.WriteLine("One or more of the numbers is not an int");
+                        Console.WriteLine("One or more of the numbers is not an integer.");
                     }
                     break;
 
                 case "4":
-                    Console.WriteLine("Enter 2 integers to divide");
+                    Console.WriteLine("Enter 2 integers to divide:");
                     var divideNumber1 = Console.ReadLine();
                     var divideNumber2 = Console.ReadLine();
 
@@ -78,13 +82,13 @@ namespace KnowledgeCheck1_Calculator
                     }
                     else
                     {
-                        Console.WriteLine("One or more of the numbers is not an int");
+                        Console.WriteLine("One or more of the numbers is not an integer.");
                     }
                     break;
-                    break;
+                //break;
 
                 default:
-                    Console.WriteLine("Unknown input");
+                    Console.WriteLine("Unknown input.");
                     break;
             }
         }

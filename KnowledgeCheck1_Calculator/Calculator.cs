@@ -4,6 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+public int CalcInput(int Number1, int Number2)
+{
+    return Number1 + Number2;
+}
+
+
 namespace KnowledgeCheck1_Calculator
 {
     public class Calculator
@@ -28,4 +34,4 @@ namespace KnowledgeCheck1_Calculator
             return first / second;
         }
     }
-}
+}   
